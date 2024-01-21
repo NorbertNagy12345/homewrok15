@@ -1,12 +1,13 @@
 package org.example;
 
-public class Exercise {
+public class ExerciseRecursively {
     public int sumRecursively(int n) {
         if (n == 0) {
             return 0;
         }
         return n + sumRecursively(n - 1);
     }
+
     public int sumRecursivelyEven(int n) {
         if (n == 0) {
             return 0;
@@ -30,6 +31,7 @@ public class Exercise {
             return s.charAt(0) == s.charAt(s.length() - 1) && isPalindrome(s.substring(1, s.length() - 1));
         }
     }
+
     public int fibonacci(int n) {
         if (n == 0) {
             return 0;
